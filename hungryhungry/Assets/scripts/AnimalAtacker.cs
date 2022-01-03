@@ -6,7 +6,7 @@ public class AnimalAtacker : MonoBehaviour
 {
 
     //launch speed
-    public float runSpeed = -5;
+    public float runSpeed = -0.5f;
 
     //destroy area
     private float destroy = -10f;
