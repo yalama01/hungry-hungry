@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Playercontroler : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
+    public float playerSpeed = 5f;
+
+    Vector3 playerMove = new Vector3(0, 0, 0);
 
     // Update is called once per frame
-    void Update()
+    void Fixedupdate()
     {
-        
+
+
+        Debug.Log("o");
+
     }
 }
