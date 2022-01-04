@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AnimalAtacker : MonoBehaviour
 {
@@ -26,6 +27,10 @@ public class AnimalAtacker : MonoBehaviour
         if (transform.position.z <= destroy)
         {
             Destroy(gameObject);
+
+            // Ends game on miss
+            FindObjectOfType<gameManager>().Endgame();
+            
         }
     }
     //handles deleting animal on collision
