@@ -6,7 +6,7 @@ public class AnimalAtacker : MonoBehaviour
 {
 
     //launch speed
-    public float runSpeed = -0.5f;
+    public float runSpeed = -0.25f;
 
     //destroy area
     private float destroy = -10f;
@@ -27,6 +27,17 @@ public class AnimalAtacker : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+    //handles deleting animal on collision
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "projectile")
+        {
+            Destroy(gameObject);
+        }
+        
+
+
     }
 
 }

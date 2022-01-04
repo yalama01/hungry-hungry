@@ -703,6 +703,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1691784689}
+  - component: {fileID: 1691784690}
   m_Layer: 0
   m_Name: stampede
   m_TagString: Untagged
@@ -724,3 +725,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1691784690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691784688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 171d997859a71b34cad3cfc685e1b31d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doe: {fileID: 131568, guid: 2fdf2b8525a6fa54ba867925b16564e3, type: 3}
+  fox: {fileID: 110416, guid: d08ba223a91fb3440afcbed27fafa936, type: 3}
+  stag: {fileID: 114920, guid: ff249e9534924c744bdfa6a3d2d1746c, type: 3}

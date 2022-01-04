@@ -41,7 +41,7 @@ public class Playercontroler : MonoBehaviour
         //player controles
         else
         {
-            playerMove = Input.GetAxis("Horizontal");
+            playerMove = Input.GetAxisRaw("Horizontal");
 
             transform.Translate(Vector3.right * playerSpeed * playerMove);
         }

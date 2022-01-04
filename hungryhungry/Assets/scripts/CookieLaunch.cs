@@ -27,5 +27,18 @@ public class CookieLaunch : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    
+
+    //handles deleting cookie on collision
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "animal")
+        {
+            Destroy(gameObject);
+
+        }
+
+
+
+    }
+
 }
